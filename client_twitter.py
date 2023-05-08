@@ -6,7 +6,7 @@ spark = SparkSession.builder.appName('SparkStreaming').getOrCreate()
 lines = spark.readStream\
     .format('socket')\
     .option('host','localhost')\
-    .option('port',9009)\
+    .option('port',númerodeportaemquevcdeseje)\
     .load()
 words = lines.select(f.explode(f.split(lines.value, " ")).alias('word'))
 

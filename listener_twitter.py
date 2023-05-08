@@ -2,7 +2,7 @@ import socket
 import tweepy # facilitar a conexão
 
 HOST = 'localhost'
-PORT = 9009 # GARANTINDO QUE NÃO ESTÁ SENDO USADA
+PORT = númerodeportaemquevcdeseje # GARANTINDO QUE NÃO ESTÁ SENDO USADA
 
 s = socket.socket()
 s.bind((HOST,PORT))
@@ -14,7 +14,7 @@ conn,address = s.accept()
 print(f'Recebendo a solictação de {address}')
 # Agora vem o ponto diferente, onde utilizamos o Token - Twitter
 
-token = 'AAAAAAAAAAAAAAAAAAAAAJVJnQEAAAAAPkfzlaO7C0qHISDlbApgqgh18WI%3DXcElHUIJKVcueRmZwFc3sup1stVeIa8K3nH74phc7ZOyFZJfMC'
+token = 'colcoar sua API'
 keyword = 'futebol' # palavra de interesse que queremos fazer um filtro
 
 # conexão com a API do Twitter, fechando o Listener
